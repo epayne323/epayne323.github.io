@@ -36,41 +36,37 @@
 			</li>
 		</ul>
   </nav>
-
 	<div class="container-fluid">
 		<div class="row pt-4"></div>
+
 		<div class="row pt-2">
 			<div class="col-xl-6 bg-secondary py-3 m-4">
-				<h1 class="pb-3 border-bottom text-white">Summary: Latitude vs. X</h1>
-					<p class="pt-2 text-white">
-						<img class = "float-left mr-3" id="landingimg" src="Visualizations/cloudiness.png">
-						The purpose of this project was to analyze how weather changes as one approaches the equator. We accomplished this analysis by pulling data from the OpenWeatherMap API to assemble a dataset for over 500 randomly selected cities. 
-						<br></br>
-						After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. the cities' latitude. These factors included temperature, wind speed, cloudiness, and humidity. This site provides the source data and visualizations created during this analysis as well as descriptions and explanations of any trends and correlations discovered.
-					</p>
+				<h2 class="pb-3 mb-3 border-bottom text-white">Temperature</h2>
+				<img class="img-fluid" src="Visualizations/temperature.png">
+				<p class="pt-2 text-white">
+					As expected, there is a strong relationship between temperature and latitude, with the weather becomes significantly warmer as one approaches the equator (0° Latitude). Due to the tilt of the earth at the time of year this data gathered, the southern hemisphere in this dataset tends to be warmer than the northern hemisphere. </p>
 			</div>
 
 			<div class="col-xl-5 bg-secondary py-3 m-4">
-				<h2 class="border-bottom text-white pb-3">Visualizations</h2>
+				<h2 class="pb-3 mb-3 border-bottom text-white">Other Visualizations</h2>
 				<div class="row">
 					<div class="col-xl-6">
-						<img class="img-fluid my-3" src="Visualizations/cloudiness.png">
+						<img class="img-fluid my-1" src="Visualizations/cloudiness.png">
 					</div>
 					<div class="col-xl-6">
-						<img class="img-fluid my-3" src="Visualizations/humidity.png">
+						<img class="img-fluid my-1" src="Visualizations/humidity.png">
 					</div>
 				</div>
-				<div class="row">
+				<div class="row pt-4">
 					<div class="col-xl-6">
-						<img class="img-fluid my-3" src="Visualizations/temperature.png">
+						<img class="img-fluid border border-primary my-1" id="selectedvis" src="Visualizations/temperature.png">
 					</div>
 					<div class="col-xl-6">
-						<img class="img-fluid my-3" src="Visualizations/windspeed.png">
+						<img class="img-fluid my-1" src="Visualizations/windspeed.png">
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
 </body>
 </html>
